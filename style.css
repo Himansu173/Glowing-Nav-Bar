@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    position: relative;
+    letter-spacing: 2px;
+    margin: 0 10px 0 10px;
+    border: 1px solid ;
+    display: flex;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.9rem;
+    font-weight: bolder;
+}
+
+.line {
+    display: inline-block;
+    height: 30px;
+    width: 5px;
+    margin-left: -10px;
+    position: absolute;
+    transition: 0.7s;
+}
+
+a:nth-child(1) {
+    background: linear-gradient(to right, rgb(37, 37, 245), rgb(37, 37, 245) 50%, gray 50%);
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.7s;
+}
+
+a:nth-child(1) div {
+    background-color: rgb(37, 37, 245);
+}
+
+a:nth-child(2) {
+    background: linear-gradient(to right, orange, orange 50%, gray 50%);
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.7s;
+}
+
+a:nth-child(2) div {
+    background-color: orange;
+}
+
+a:nth-child(3) {
+    background: linear-gradient(to right, rgb(253, 97, 123), rgb(253, 97, 123) 50%, gray 50%);
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.7s;
+}
+
+a:nth-child(3) div {
+    background-color: rgb(253, 97, 123);
+}
+
+a:nth-child(4) {
+    background: linear-gradient(to right, rgb(0, 255, 0), rgb(0, 255, 0) 50%, gray 50%);
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.7s;
+
+}
+
+a:nth-child(4) div {
+    background-color: rgb(0, 255, 0);
+}
+
+a:nth-child(5) {
+    background: linear-gradient(to right, yellow, yellow 50%, gray 50%);
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.7s;
+}
+
+a:nth-child(5) div {
+    background-color: yellow;
+}
+
+a:nth-child(6) {
+    background: linear-gradient(to right, crimson, crimson 50%, gray 50%);
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.7s;
+}
+
+a:nth-child(6) div {
+    background-color: crimson;
+}
+
+nav a:hover .line {
+    margin-left: 104%;
+}
+
+nav a:hover {
+    background-position: 0 100%;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: grid;
+        justify-content: center;
+    }
+}
